@@ -14,7 +14,7 @@ class Ship:
 
         self.x = float(self.rect.x)
 
-        self.moving_right = False
+        self.moving_right = False 
         self.moving_left = False
 
     def update(self):
