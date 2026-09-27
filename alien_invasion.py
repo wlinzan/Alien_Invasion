@@ -23,7 +23,7 @@ class AlienInvasion:
         while True:
             self._check_events()
             self.ship.update()
-            self._update_bulleets()
+            self._update_bullets()
             self._update_screen()
             self.clock.tick(60)
 
@@ -60,7 +60,7 @@ class AlienInvasion:
             new_bullet = Bullet(self)
             self.bullets.add(new_bullet)
 
-    def _update_bulleets(self):
+    def _update_bullets(self):
         self.bullets.update()
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
